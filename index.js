@@ -182,7 +182,7 @@ d: "Immediately provide your credit card information to fix the issue",
 function startQuiz() {
   document.getElementById('popupContainer').style.display = 'none';
   document.getElementById('quiz-container').style.display = 'block';
-  // Additional code to start the quiz goes here
+
 }
 
 const saveBtn = document.getElementById("saveBtn");
@@ -210,7 +210,7 @@ function saveAnswer() {
     }
   });
 
-  // Show whether the answer is correct or incorrect
+
   const isCorrect = answer === correctAnswer;
   const feedback = document.createElement("p");
   //feedback.textContent = isCorrect ? "Correct" : "Incorrect";
@@ -279,7 +279,7 @@ function getSelected() {
   return answer;
 }
 
-// Event listener for the submit button
+
 btnSubmit.addEventListener("click", function () {
   const answers = getSelected();
 
@@ -288,10 +288,10 @@ btnSubmit.addEventListener("click", function () {
     const correctAnswer = currentQuizData.correct;
 
     if (answers === correctAnswer) {
-      score++; // Increment the score if the answer is correct
+      score++; 
     }
 
-    nextQuestion(); // Proceed to the next question after evaluating the current one
+    nextQuestion(); 
   }
 });
 
@@ -339,13 +339,13 @@ function saveAnswer() {
     }
   });
 
-  // Show whether the answer is correct or incorrect
+
   const isCorrect = answer === correctAnswer;
   const feedback = document.createElement("p");
   feedback.classList.add(isCorrect ? "correct-feedback" : "incorrect-feedback");
   footerEl.appendChild(feedback);
 
-  saveBtn.disabled = true; // Disable save button after saving answer
+  saveBtn.disabled = true; 
   nextBtn.disabled = false;
   // Debugging
   console.log("User Answer:", answer);
@@ -353,7 +353,7 @@ function saveAnswer() {
   console.log("Is Correct?", isCorrect);
 
   if (isCorrect) {
-    score++; // Increment the score if the answer is correct
+    score++; 
     console.log("Score:", score);
   }
 }
