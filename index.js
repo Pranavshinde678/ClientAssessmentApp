@@ -21,7 +21,7 @@ const quizData = [
       question: "You receive an unsolicited text message claiming that you've won a free vacation to an exotic destination. The message instructs you to call a certain number to claim your prize. What should you do?",
 
       a: "Call the number to claim the prize",
-      b: "Ignore the message",
+      b: "Save the number and send a message to ask for prize details",
       c: "Reply to the message asking for more details",
       d: "Block the number and delete the message",
       
