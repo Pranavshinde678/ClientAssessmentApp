@@ -88,11 +88,13 @@ const quizData = [
     
     },
     {
-      question: "While accessing your mobile banking app, you notice an unfamiliar transaction initiated by your account. What should you do?",
-      a: "Ignore it, assuming it's a mistake",
-      b: "Contact your bank immediately to report the unauthorized transaction",
-      c: "Share your login details with a friend for assistance",
-      d: "Wait for the transaction to reverse automatically",
+      question:"While browsing online, you come across a website offering unbelievable deals on designer goods. What should you do?",
+
+      a: "Immediately make a purchase to take advantage of the amazing deals.",
+      b: "Research the website for reviews and verify its authenticity before making any purchases.",
+      c: "Share the website with friends so they can also benefit from the deals.",
+      d: "Proceed with caution and make a small test purchase to assess the legitimacy of the website.",
+
       correct: "b"
     },
     {
@@ -163,7 +165,7 @@ const quizData = [
       "b": "Ignore the letter, assuming it's a scam",
       "c": "Contact your bank using the official number to verify the authenticity of the letter",
       "d": "Share the letter with friends and family for advice",
-      "correct": "c"
+      correct: "c"
     },
     {
       question: "A caller alleges to be a tech support representative from a reputable company, claiming they've detected a virus on your computer. What's your response?",
@@ -185,7 +187,7 @@ function startQuiz() {
 
 const saveBtn = document.getElementById("saveBtn");
 const nextBtn = document.getElementById("nextBtn");
-nextBtn.disabled = true;
+//nextBtn.disabled = true;
 // Add event listeners to save and next buttons
 saveBtn.addEventListener("click", saveAnswer);
 nextBtn.addEventListener("click", nextQuestion);
