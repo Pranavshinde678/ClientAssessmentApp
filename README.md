@@ -1,1 +1,1 @@
-# test-1
+This is a Client Security Assessment App which comprises 20 scenario-based questions, each carrying 1 mark. The client is able to review the answers immediately after saving the option. After completing the quiz, the client is able to view the results (score and percentage
