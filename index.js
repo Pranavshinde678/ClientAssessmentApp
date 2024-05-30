@@ -310,9 +310,9 @@ function nextQuestion() {
   }
 
   if (currentQuiz === quizData.length - 1) {
-    const btnSubmit = document.getElementById("btn");
-    btnSubmit.innerText = "Submit to view the Results";
-    btnSubmit.style.display = "block";
+    const btnSubmit = document.getElementById("nextBtn");
+    btnSubmit.innerText = "View Results";
+    //btnSubmit.style.display = "block";
   }
 }
 
