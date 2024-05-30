@@ -240,7 +240,7 @@ loadQuiz();
 
 function loadQuiz() {
   deselectAnswers();
-  shuffleArray(quizData)
+  // shuffleArray(quizData)
   const currentQuizData = quizData[currentQuiz];
   questionEl.innerText = currentQuizData.question;
   a_txt.innerText = currentQuizData.a;
@@ -249,12 +249,12 @@ function loadQuiz() {
   d_txt.innerText = currentQuizData.d;
   quizDetailEl.innerHTML = `<p>${currentQuiz + 1} of ${quizData.length}</p>`;
 }
-function shuffleArray(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-}
+// function shuffleArray(array) {
+//   for (let i = array.length - 1; i > 0; i--) {
+//     const j = Math.floor(Math.random() * (i + 1));
+//     [array[i], array[j]] = [array[j], array[i]];
+//   }
+// }
 // deselect
 function deselectAnswers() {
   answerEl.forEach((answerEl) => {
